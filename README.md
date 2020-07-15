@@ -1,6 +1,6 @@
 # VVPageCard
 
-[![CI Status](https://img.shields.io/travis/zxfei/VVPageCard.svg?style=flat)](https://travis-ci.org/zxfei/VVPageCard)
+[![CI Status](https://img.shields.io/travis/zxf-sagittarius/VVPageCard.svg?style=flat)](https://travis-ci.org/zxf-sagittarius/VVPageCard)
 [![Version](https://img.shields.io/cocoapods/v/VVPageCard.svg?style=flat)](https://cocoapods.org/pods/VVPageCard)
 [![License](https://img.shields.io/cocoapods/l/VVPageCard.svg?style=flat)](https://cocoapods.org/pods/VVPageCard)
 [![Platform](https://img.shields.io/cocoapods/p/VVPageCard.svg?style=flat)](https://cocoapods.org/pods/VVPageCard)
@@ -22,7 +22,7 @@ pod 'VVPageCard'
 
 ## Author
 
-zxfei, zhuxiaofei2@guazi.com
+zxf-sagittarius, zxf-sagittarius@qq.com
 
 ## License
 

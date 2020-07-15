@@ -1,0 +1,1 @@
+../../../../../VVPageCard/Classes/model/VVCardsGroup.h

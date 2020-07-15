@@ -1,0 +1,1 @@
+../../../../../VVPageCard/Classes/protocols/VVCardProtocol.h

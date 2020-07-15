@@ -1,0 +1,6 @@
+framework module Pods_VVPageCard_Tests {
+  umbrella header "Pods-VVPageCard_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

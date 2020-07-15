@@ -1,0 +1,6 @@
+framework module VVPageCard {
+  umbrella header "VVPageCard-umbrella.h"
+
+  export *
+  module * { export * }
+}

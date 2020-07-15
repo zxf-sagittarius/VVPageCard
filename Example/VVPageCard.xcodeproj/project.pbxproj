@@ -7,6 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C123A1724BDB2F9004E3B90 /* VVTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C123A1624BDB2F9004E3B90 /* VVTabBarController.m */; };
+		0C123A1A24BDB37A004E3B90 /* VVCollectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C123A1924BDB37A004E3B90 /* VVCollectionController.m */; };
+		0C123A1D24BDB38B004E3B90 /* VVTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C123A1C24BDB38B004E3B90 /* VVTableController.m */; };
+		0C123A2424BDB93E004E3B90 /* VVHomeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C123A2324BDB93E004E3B90 /* VVHomeModel.m */; };
+		0C123A2724BDBC01004E3B90 /* VVBannerInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C123A2624BDBC01004E3B90 /* VVBannerInfo.m */; };
+		0C123A2A24BDBC15004E3B90 /* VVBasicInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C123A2924BDBC15004E3B90 /* VVBasicInfo.m */; };
+		0C6D948824BEAAF5004A41F3 /* VVHomeModelType.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C6D948724BEAAF5004A41F3 /* VVHomeModelType.m */; };
+		0C6D948B24BEAC4E004A41F3 /* VVTableViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C6D948A24BEAC4E004A41F3 /* VVTableViewModel.m */; };
+		0C6D948C24BEAF7D004A41F3 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 0C123A1F24BDB4F6004E3B90 /* data.json */; };
+		0C6D948F24BEB0BF004A41F3 /* VVHomeLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C6D948E24BEB0BF004A41F3 /* VVHomeLayout.m */; };
+		0C6D949224BEB2AC004A41F3 /* VVBannerLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C6D949124BEB2AC004A41F3 /* VVBannerLayout.m */; };
+		0C6D949524BEB2B9004A41F3 /* VVBasicLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C6D949424BEB2B9004A41F3 /* VVBasicLayout.m */; };
+		0C6D949A24BEB400004A41F3 /* VVBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C6D949924BEB400004A41F3 /* VVBaseView.m */; };
+		0C6D949D24BEB426004A41F3 /* VVBannerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C6D949C24BEB426004A41F3 /* VVBannerView.m */; };
+		0C6D94A024BEB435004A41F3 /* VVBasicView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C6D949F24BEB435004A41F3 /* VVBasicView.m */; };
+		0C6D94A324BEB707004A41F3 /* VVCardIdentifier.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C6D94A224BEB707004A41F3 /* VVCardIdentifier.m */; };
+		0C6D94A824BEDE8C004A41F3 /* UIView+FLFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C6D94A624BEDE8C004A41F3 /* UIView+FLFrame.m */; };
+		0C6D94AB24BEE25F004A41F3 /* VVImageInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C6D94AA24BEE25F004A41F3 /* VVImageInfo.m */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -21,9 +39,9 @@
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
+		840FB5A3712E5C17418425E5 /* libPods-VVPageCard_Example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AA27F077AAC6CD3677F43601 /* libPods-VVPageCard_Example.a */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
-		9B673022011CAE8B50BEC5C6 /* Pods_VVPageCard_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17BD44D89D5126A59663A1AB /* Pods_VVPageCard_Tests.framework */; };
-		9DDFA33F11DD4E7D4B693257 /* Pods_VVPageCard_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F047AE40165B5645D2E7AFC /* Pods_VVPageCard_Example.framework */; };
+		ACC4610096D2CB815F80E0FE /* libPods-VVPageCard_Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F0BCBF42D449437C89353D02 /* libPods-VVPageCard_Tests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +55,41 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		17BD44D89D5126A59663A1AB /* Pods_VVPageCard_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VVPageCard_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C123A1524BDB2F9004E3B90 /* VVTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VVTabBarController.h; sourceTree = "<group>"; };
+		0C123A1624BDB2F9004E3B90 /* VVTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VVTabBarController.m; sourceTree = "<group>"; };
+		0C123A1824BDB37A004E3B90 /* VVCollectionController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VVCollectionController.h; sourceTree = "<group>"; };
+		0C123A1924BDB37A004E3B90 /* VVCollectionController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VVCollectionController.m; sourceTree = "<group>"; };
+		0C123A1B24BDB38B004E3B90 /* VVTableController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VVTableController.h; sourceTree = "<group>"; };
+		0C123A1C24BDB38B004E3B90 /* VVTableController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VVTableController.m; sourceTree = "<group>"; };
+		0C123A1F24BDB4F6004E3B90 /* data.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
+		0C123A2224BDB93E004E3B90 /* VVHomeModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VVHomeModel.h; sourceTree = "<group>"; };
+		0C123A2324BDB93E004E3B90 /* VVHomeModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VVHomeModel.m; sourceTree = "<group>"; };
+		0C123A2524BDBC01004E3B90 /* VVBannerInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VVBannerInfo.h; sourceTree = "<group>"; };
+		0C123A2624BDBC01004E3B90 /* VVBannerInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VVBannerInfo.m; sourceTree = "<group>"; };
+		0C123A2824BDBC15004E3B90 /* VVBasicInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VVBasicInfo.h; sourceTree = "<group>"; };
+		0C123A2924BDBC15004E3B90 /* VVBasicInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VVBasicInfo.m; sourceTree = "<group>"; };
+		0C6D948624BEAAF5004A41F3 /* VVHomeModelType.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VVHomeModelType.h; sourceTree = "<group>"; };
+		0C6D948724BEAAF5004A41F3 /* VVHomeModelType.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VVHomeModelType.m; sourceTree = "<group>"; };
+		0C6D948924BEAC4E004A41F3 /* VVTableViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VVTableViewModel.h; sourceTree = "<group>"; };
+		0C6D948A24BEAC4E004A41F3 /* VVTableViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VVTableViewModel.m; sourceTree = "<group>"; };
+		0C6D948D24BEB0BF004A41F3 /* VVHomeLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VVHomeLayout.h; sourceTree = "<group>"; };
+		0C6D948E24BEB0BF004A41F3 /* VVHomeLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VVHomeLayout.m; sourceTree = "<group>"; };
+		0C6D949024BEB2AC004A41F3 /* VVBannerLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VVBannerLayout.h; sourceTree = "<group>"; };
+		0C6D949124BEB2AC004A41F3 /* VVBannerLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VVBannerLayout.m; sourceTree = "<group>"; };
+		0C6D949324BEB2B9004A41F3 /* VVBasicLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VVBasicLayout.h; sourceTree = "<group>"; };
+		0C6D949424BEB2B9004A41F3 /* VVBasicLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VVBasicLayout.m; sourceTree = "<group>"; };
+		0C6D949824BEB400004A41F3 /* VVBaseView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VVBaseView.h; sourceTree = "<group>"; };
+		0C6D949924BEB400004A41F3 /* VVBaseView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VVBaseView.m; sourceTree = "<group>"; };
+		0C6D949B24BEB426004A41F3 /* VVBannerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VVBannerView.h; sourceTree = "<group>"; };
+		0C6D949C24BEB426004A41F3 /* VVBannerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VVBannerView.m; sourceTree = "<group>"; };
+		0C6D949E24BEB435004A41F3 /* VVBasicView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VVBasicView.h; sourceTree = "<group>"; };
+		0C6D949F24BEB435004A41F3 /* VVBasicView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VVBasicView.m; sourceTree = "<group>"; };
+		0C6D94A124BEB707004A41F3 /* VVCardIdentifier.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VVCardIdentifier.h; sourceTree = "<group>"; };
+		0C6D94A224BEB707004A41F3 /* VVCardIdentifier.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VVCardIdentifier.m; sourceTree = "<group>"; };
+		0C6D94A624BEDE8C004A41F3 /* UIView+FLFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+FLFrame.m"; sourceTree = "<group>"; };
+		0C6D94A724BEDE8C004A41F3 /* UIView+FLFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+FLFrame.h"; sourceTree = "<group>"; };
+		0C6D94A924BEE25F004A41F3 /* VVImageInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VVImageInfo.h; sourceTree = "<group>"; };
+		0C6D94AA24BEE25F004A41F3 /* VVImageInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VVImageInfo.m; sourceTree = "<group>"; };
 		3F33CA5D90A51FE6FF980150 /* Pods-VVPageCard_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VVPageCard_Example.debug.xcconfig"; path = "Target Support Files/Pods-VVPageCard_Example/Pods-VVPageCard_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* VVPageCard_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VVPageCard_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -58,15 +110,16 @@
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
-		6F047AE40165B5645D2E7AFC /* Pods_VVPageCard_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VVPageCard_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		88D7E5392D6C956C0C2C7F3D /* Pods-VVPageCard_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VVPageCard_Tests.debug.xcconfig"; path = "Target Support Files/Pods-VVPageCard_Tests/Pods-VVPageCard_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		8AF2CF156FE996EC006CAD22 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		96B6B9F1A084985483A31D0F /* VVPageCard.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = VVPageCard.podspec; path = ../VVPageCard.podspec; sourceTree = "<group>"; };
+		8AF2CF156FE996EC006CAD22 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		96B6B9F1A084985483A31D0F /* VVPageCard.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = VVPageCard.podspec; path = ../VVPageCard.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		AA27F077AAC6CD3677F43601 /* libPods-VVPageCard_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-VVPageCard_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D94E4C5CA0E9B5AEE429E1D2 /* Pods-VVPageCard_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VVPageCard_Tests.release.xcconfig"; path = "Target Support Files/Pods-VVPageCard_Tests/Pods-VVPageCard_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		E0E2A3CA5B9068D452446640 /* Pods-VVPageCard_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VVPageCard_Example.release.xcconfig"; path = "Target Support Files/Pods-VVPageCard_Example/Pods-VVPageCard_Example.release.xcconfig"; sourceTree = "<group>"; };
-		F3396BFD52FEF5860F45A5D2 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		F0BCBF42D449437C89353D02 /* libPods-VVPageCard_Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-VVPageCard_Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3396BFD52FEF5860F45A5D2 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,7 +130,7 @@
 				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
-				9DDFA33F11DD4E7D4B693257 /* Pods_VVPageCard_Example.framework in Frameworks */,
+				840FB5A3712E5C17418425E5 /* libPods-VVPageCard_Example.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,13 +141,113 @@
 				6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */,
 				6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */,
-				9B673022011CAE8B50BEC5C6 /* Pods_VVPageCard_Tests.framework in Frameworks */,
+				ACC4610096D2CB815F80E0FE /* libPods-VVPageCard_Tests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0C123A1224BDB29C004E3B90 /* table */ = {
+			isa = PBXGroup;
+			children = (
+				0C6D949724BEB39F004A41F3 /* views */,
+				0C123A1B24BDB38B004E3B90 /* VVTableController.h */,
+				0C123A1C24BDB38B004E3B90 /* VVTableController.m */,
+				0C6D94A124BEB707004A41F3 /* VVCardIdentifier.h */,
+				0C6D94A224BEB707004A41F3 /* VVCardIdentifier.m */,
+				0C6D949624BEB38E004A41F3 /* viewmodel */,
+				0C123A2024BDB8DA004E3B90 /* model */,
+				0C123A2124BDB8FD004E3B90 /* layout */,
+			);
+			name = table;
+			sourceTree = "<group>";
+		};
+		0C123A1324BDB2A9004E3B90 /* collection */ = {
+			isa = PBXGroup;
+			children = (
+				0C123A1824BDB37A004E3B90 /* VVCollectionController.h */,
+				0C123A1924BDB37A004E3B90 /* VVCollectionController.m */,
+			);
+			name = collection;
+			sourceTree = "<group>";
+		};
+		0C123A1424BDB2C2004E3B90 /* tab */ = {
+			isa = PBXGroup;
+			children = (
+				0C123A1524BDB2F9004E3B90 /* VVTabBarController.h */,
+				0C123A1624BDB2F9004E3B90 /* VVTabBarController.m */,
+			);
+			name = tab;
+			sourceTree = "<group>";
+		};
+		0C123A1E24BDB4C8004E3B90 /* json */ = {
+			isa = PBXGroup;
+			children = (
+				0C123A1F24BDB4F6004E3B90 /* data.json */,
+			);
+			name = json;
+			sourceTree = "<group>";
+		};
+		0C123A2024BDB8DA004E3B90 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				0C6D948624BEAAF5004A41F3 /* VVHomeModelType.h */,
+				0C6D948724BEAAF5004A41F3 /* VVHomeModelType.m */,
+				0C123A2224BDB93E004E3B90 /* VVHomeModel.h */,
+				0C123A2324BDB93E004E3B90 /* VVHomeModel.m */,
+				0C123A2524BDBC01004E3B90 /* VVBannerInfo.h */,
+				0C123A2624BDBC01004E3B90 /* VVBannerInfo.m */,
+				0C123A2824BDBC15004E3B90 /* VVBasicInfo.h */,
+				0C123A2924BDBC15004E3B90 /* VVBasicInfo.m */,
+				0C6D94A924BEE25F004A41F3 /* VVImageInfo.h */,
+				0C6D94AA24BEE25F004A41F3 /* VVImageInfo.m */,
+			);
+			name = model;
+			sourceTree = "<group>";
+		};
+		0C123A2124BDB8FD004E3B90 /* layout */ = {
+			isa = PBXGroup;
+			children = (
+				0C6D948D24BEB0BF004A41F3 /* VVHomeLayout.h */,
+				0C6D948E24BEB0BF004A41F3 /* VVHomeLayout.m */,
+				0C6D949024BEB2AC004A41F3 /* VVBannerLayout.h */,
+				0C6D949124BEB2AC004A41F3 /* VVBannerLayout.m */,
+				0C6D949324BEB2B9004A41F3 /* VVBasicLayout.h */,
+				0C6D949424BEB2B9004A41F3 /* VVBasicLayout.m */,
+			);
+			name = layout;
+			sourceTree = "<group>";
+		};
+		0C6D949624BEB38E004A41F3 /* viewmodel */ = {
+			isa = PBXGroup;
+			children = (
+				0C6D948924BEAC4E004A41F3 /* VVTableViewModel.h */,
+				0C6D948A24BEAC4E004A41F3 /* VVTableViewModel.m */,
+			);
+			name = viewmodel;
+			sourceTree = "<group>";
+		};
+		0C6D949724BEB39F004A41F3 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				0C6D949B24BEB426004A41F3 /* VVBannerView.h */,
+				0C6D949C24BEB426004A41F3 /* VVBannerView.m */,
+				0C6D949E24BEB435004A41F3 /* VVBasicView.h */,
+				0C6D949F24BEB435004A41F3 /* VVBasicView.m */,
+			);
+			name = views;
+			sourceTree = "<group>";
+		};
+		0C6D94A524BEDE6D004A41F3 /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				0C6D94A724BEDE8C004A41F3 /* UIView+FLFrame.h */,
+				0C6D94A624BEDE8C004A41F3 /* UIView+FLFrame.m */,
+			);
+			name = utils;
+			sourceTree = "<group>";
+		};
 		4792E6C4D6A6419D70FDA02C /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -103,7 +256,6 @@
 				88D7E5392D6C956C0C2C7F3D /* Pods-VVPageCard_Tests.debug.xcconfig */,
 				D94E4C5CA0E9B5AEE429E1D2 /* Pods-VVPageCard_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -135,8 +287,8 @@
 				6003F58F195388D20070C39A /* CoreGraphics.framework */,
 				6003F591195388D20070C39A /* UIKit.framework */,
 				6003F5AF195388D20070C39A /* XCTest.framework */,
-				6F047AE40165B5645D2E7AFC /* Pods_VVPageCard_Example.framework */,
-				17BD44D89D5126A59663A1AB /* Pods_VVPageCard_Tests.framework */,
+				AA27F077AAC6CD3677F43601 /* libPods-VVPageCard_Example.a */,
+				F0BCBF42D449437C89353D02 /* libPods-VVPageCard_Tests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -146,6 +298,13 @@
 			children = (
 				6003F59C195388D20070C39A /* VVAppDelegate.h */,
 				6003F59D195388D20070C39A /* VVAppDelegate.m */,
+				0C6D949824BEB400004A41F3 /* VVBaseView.h */,
+				0C6D949924BEB400004A41F3 /* VVBaseView.m */,
+				0C6D94A524BEDE6D004A41F3 /* utils */,
+				0C123A1E24BDB4C8004E3B90 /* json */,
+				0C123A1424BDB2C2004E3B90 /* tab */,
+				0C123A1324BDB2A9004E3B90 /* collection */,
+				0C123A1224BDB29C004E3B90 /* table */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
 				6003F5A5195388D20070C39A /* VVViewController.h */,
 				6003F5A6195388D20070C39A /* VVViewController.m */,
@@ -208,7 +367,6 @@
 				6003F586195388D20070C39A /* Sources */,
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
-				03ED23136B301463E28E7C71 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -258,6 +416,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -280,6 +439,7 @@
 				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
 				71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
+				0C6D948C24BEAF7D004A41F3 /* data.json in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -295,24 +455,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		03ED23136B301463E28E7C71 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-VVPageCard_Example/Pods-VVPageCard_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/VVPageCard/VVPageCard.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/VVPageCard.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VVPageCard_Example/Pods-VVPageCard_Example-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		925DEC11556C0ACC7D320F7D /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -364,9 +506,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C123A1A24BDB37A004E3B90 /* VVCollectionController.m in Sources */,
+				0C123A2424BDB93E004E3B90 /* VVHomeModel.m in Sources */,
+				0C123A2A24BDBC15004E3B90 /* VVBasicInfo.m in Sources */,
+				0C6D94AB24BEE25F004A41F3 /* VVImageInfo.m in Sources */,
+				0C6D949224BEB2AC004A41F3 /* VVBannerLayout.m in Sources */,
+				0C6D948B24BEAC4E004A41F3 /* VVTableViewModel.m in Sources */,
 				6003F59E195388D20070C39A /* VVAppDelegate.m in Sources */,
+				0C6D949D24BEB426004A41F3 /* VVBannerView.m in Sources */,
+				0C123A1D24BDB38B004E3B90 /* VVTableController.m in Sources */,
 				6003F5A7195388D20070C39A /* VVViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
+				0C6D948F24BEB0BF004A41F3 /* VVHomeLayout.m in Sources */,
+				0C6D949524BEB2B9004A41F3 /* VVBasicLayout.m in Sources */,
+				0C123A1724BDB2F9004E3B90 /* VVTabBarController.m in Sources */,
+				0C6D948824BEAAF5004A41F3 /* VVHomeModelType.m in Sources */,
+				0C123A2724BDBC01004E3B90 /* VVBannerInfo.m in Sources */,
+				0C6D94A824BEDE8C004A41F3 /* UIView+FLFrame.m in Sources */,
+				0C6D94A024BEB435004A41F3 /* VVBasicView.m in Sources */,
+				0C6D94A324BEB707004A41F3 /* VVCardIdentifier.m in Sources */,
+				0C6D949A24BEB400004A41F3 /* VVBaseView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

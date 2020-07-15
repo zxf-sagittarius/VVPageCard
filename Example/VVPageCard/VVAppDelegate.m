@@ -2,17 +2,23 @@
 //  VVAppDelegate.m
 //  VVPageCard
 //
-//  Created by zxfei on 07/13/2020.
-//  Copyright (c) 2020 zxfei. All rights reserved.
+//  Created by zxf-sagittarius on 07/13/2020.
+//  Copyright (c) 2020 zxf-sagittarius. All rights reserved.
 //
 
 #import "VVAppDelegate.h"
+#import "VVTabBarController.h"
 
 @implementation VVAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    self.window.backgroundColor = [UIColor whiteColor];
+    [self.window makeKeyAndVisible];
+    
+    self.window.rootViewController = [[VVTabBarController alloc] init];
+    
     return YES;
 }
 

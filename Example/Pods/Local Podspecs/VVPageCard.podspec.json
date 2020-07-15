@@ -1,0 +1,27 @@
+{
+  "name": "VVPageCard",
+  "version": "1.0.0",
+  "summary": "A short description of VVPageCard.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/zxf-sagittarius/VVPageCard",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "zxf-sagittarius": "zxf-sagittarius@qq.com"
+  },
+  "source": {
+    "git": "https://github.com/zxf-sagittarius/VVPageCard.git",
+    "tag": "1.0.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "VVPageCard/Classes/**/*.{h,m}",
+  "dependencies": {
+    "YYModel": [
+
+    ]
+  }
+}
