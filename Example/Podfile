@@ -5,6 +5,7 @@ target 'VVPageCard_Example' do
   pod 'VVPageCard', :path => '../'
   pod 'VVEventBus'
   pod 'SDWebImage'
+  pod 'SVProgressHUD'
   target 'VVPageCard_Tests' do
     inherit! :search_paths 
   end

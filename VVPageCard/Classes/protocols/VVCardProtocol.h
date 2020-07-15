@@ -9,9 +9,13 @@
 #define VVCardProtocol_h
 
 #import "VVCardLayoutProtocol.h"
+@class VVBus;
 @protocol VVCardProtocol <NSObject>
 
 @optional
+
+@property (nonatomic, weak) VVBus *bus;
+@property (nonatomic, strong) id <VVCardLayoutProtocol> cardLayout;
 - (void)update:(id <VVCardLayoutProtocol>)model;
 
 @end

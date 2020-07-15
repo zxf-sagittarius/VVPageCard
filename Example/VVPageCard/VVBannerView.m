@@ -8,9 +8,11 @@
 
 #import "VVBannerView.h"
 #import "VVBannerInfo.h"
+#import "VVBannerLayout.h"
 #import "UIView+FLFrame.h"
 #import "UIImageView+WebCache.h"
-
+#import "VVBus.h"
+#import "VVTestEventDefine.h"
 
 @interface VVBannerView ()
 
@@ -18,6 +20,8 @@
 
 @property (nonatomic, strong) UIImageView *imagv;
 @property (nonatomic, strong) UIImageView *imagv2;
+
+@property (nonatomic, strong) VVBannerLayout *bannerLayout;
 
 @end
 
@@ -41,11 +45,17 @@
     UIImageView *imgv1 = [[UIImageView alloc] init];
     CGFloat width = (self.width - 60)/2;
     imgv1.size = CGSizeMake(width, width / 3 * 2);
+    UITapGestureRecognizer *tap1 = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tap:)];
+    [imgv1 addGestureRecognizer:tap1];
+    imgv1.userInteractionEnabled = YES;
     [self addSubview:imgv1];
     self.imagv = imgv1;
     
     UIImageView *imgv2 = [[UIImageView alloc] init];
     imgv2.size = CGSizeMake(width, width / 3 * 2);
+    UITapGestureRecognizer *tap2 = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tap:)];
+    [imgv2 addGestureRecognizer:tap2];
+    imgv2.userInteractionEnabled = YES;
     [self addSubview:imgv2];
     self.imagv2 = imgv2;
  }
@@ -64,7 +74,7 @@
 
 - (void)update:(id<VVCardLayoutProtocol>)model {
     
-    NSLog(@"%@",model.cardIdentifier);
+    self.bannerLayout = model;
     
     VVBannerInfo *bannerInfo = model.cardModel;
     
@@ -85,6 +95,20 @@
         } else {
             self.imagv2.hidden = YES;
         }
+    }
+}
+
+#pragma mark -- taps
+
+- (void)tap:(UITapGestureRecognizer *)tap {
+    
+    VVEvent *event = [[VVEvent alloc] initWithEvent:VVEventType_Banner identifier:nil poster:self];
+    if (tap.view == self.imagv) {
+        [event setParam:@"点击了第一张" forKey:@"index"];
+        [self.bus hitEvent:event];
+    } else if (tap.view == self.imagv2) {
+        [event setParam:@"点击了第二张" forKey:@"index"];
+        [self.bus hitEvent:event];
     }
 }
 

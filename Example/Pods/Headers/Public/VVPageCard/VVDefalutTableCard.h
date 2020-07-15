@@ -1,1 +1,1 @@
-../../../../../VVPageCard/Classes/view/VVDefalutTableCard.h
+../../../../../VVPageCard/Classes/card/VVDefalutTableCard.h

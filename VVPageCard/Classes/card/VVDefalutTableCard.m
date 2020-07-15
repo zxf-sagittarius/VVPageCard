@@ -8,6 +8,7 @@
 #import "VVDefalutTableCard.h"
 
 @implementation VVDefalutTableCard
+@synthesize bus,cardLayout;
 
 - (void)awakeFromNib {
     [super awakeFromNib];
@@ -19,5 +20,7 @@
 
     // Configure the view for the selected state
 }
+
+
 
 @end

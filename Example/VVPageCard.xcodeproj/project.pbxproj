@@ -25,6 +25,7 @@
 		0C6D94A324BEB707004A41F3 /* VVCardIdentifier.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C6D94A224BEB707004A41F3 /* VVCardIdentifier.m */; };
 		0C6D94A824BEDE8C004A41F3 /* UIView+FLFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C6D94A624BEDE8C004A41F3 /* UIView+FLFrame.m */; };
 		0C6D94AB24BEE25F004A41F3 /* VVImageInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C6D94AA24BEE25F004A41F3 /* VVImageInfo.m */; };
+		0C6D94B324BEF8DE004A41F3 /* VVTestEventDefine.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C6D94B124BEF8DE004A41F3 /* VVTestEventDefine.m */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -90,6 +91,8 @@
 		0C6D94A724BEDE8C004A41F3 /* UIView+FLFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+FLFrame.h"; sourceTree = "<group>"; };
 		0C6D94A924BEE25F004A41F3 /* VVImageInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VVImageInfo.h; sourceTree = "<group>"; };
 		0C6D94AA24BEE25F004A41F3 /* VVImageInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VVImageInfo.m; sourceTree = "<group>"; };
+		0C6D94B124BEF8DE004A41F3 /* VVTestEventDefine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VVTestEventDefine.m; sourceTree = "<group>"; };
+		0C6D94B224BEF8DE004A41F3 /* VVTestEventDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VVTestEventDefine.h; sourceTree = "<group>"; };
 		3F33CA5D90A51FE6FF980150 /* Pods-VVPageCard_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VVPageCard_Example.debug.xcconfig"; path = "Target Support Files/Pods-VVPageCard_Example/Pods-VVPageCard_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* VVPageCard_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VVPageCard_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -156,6 +159,8 @@
 				0C123A1C24BDB38B004E3B90 /* VVTableController.m */,
 				0C6D94A124BEB707004A41F3 /* VVCardIdentifier.h */,
 				0C6D94A224BEB707004A41F3 /* VVCardIdentifier.m */,
+				0C6D94B224BEF8DE004A41F3 /* VVTestEventDefine.h */,
+				0C6D94B124BEF8DE004A41F3 /* VVTestEventDefine.m */,
 				0C6D949624BEB38E004A41F3 /* viewmodel */,
 				0C123A2024BDB8DA004E3B90 /* model */,
 				0C123A2124BDB8FD004E3B90 /* layout */,
@@ -367,6 +372,7 @@
 				6003F586195388D20070C39A /* Sources */,
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
+				FB540A01B334A9AD4737C192 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -499,6 +505,24 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		FB540A01B334A9AD4737C192 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VVPageCard_Example/Pods-VVPageCard_Example-resources.sh",
+				"${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SVProgressHUD.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VVPageCard_Example/Pods-VVPageCard_Example-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -510,6 +534,7 @@
 				0C123A2424BDB93E004E3B90 /* VVHomeModel.m in Sources */,
 				0C123A2A24BDBC15004E3B90 /* VVBasicInfo.m in Sources */,
 				0C6D94AB24BEE25F004A41F3 /* VVImageInfo.m in Sources */,
+				0C6D94B324BEF8DE004A41F3 /* VVTestEventDefine.m in Sources */,
 				0C6D949224BEB2AC004A41F3 /* VVBannerLayout.m in Sources */,
 				0C6D948B24BEAC4E004A41F3 /* VVTableViewModel.m in Sources */,
 				6003F59E195388D20070C39A /* VVAppDelegate.m in Sources */,

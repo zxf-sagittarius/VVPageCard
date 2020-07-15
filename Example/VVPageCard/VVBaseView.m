@@ -10,4 +10,6 @@
 
 @implementation VVBaseView
 
+@synthesize bus, cardLayout;
+
 @end

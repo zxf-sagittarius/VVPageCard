@@ -1,1 +1,1 @@
-../../../../../VVPageCard/Classes/VVCardsHelper.h
+../../../../../VVPageCard/Classes/helper/VVCardsHelper.h

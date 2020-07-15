@@ -25,4 +25,6 @@ Pod::Spec.new do |s|
   
   s.dependency 'YYModel'
   
+  s.dependency 'VVEventBus'
+  
 end

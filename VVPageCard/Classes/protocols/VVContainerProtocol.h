@@ -8,7 +8,7 @@
 #ifndef VVContainerProtocol_h
 #define VVContainerProtocol_h
 
-@class VVCardsLayouts;
+@class VVCardsLayouts, VVBus;
 @protocol VVContainerProtocol <NSObject>
 
 @property (nonatomic, strong) VVCardsLayouts * _Nullable cardsGroup;
@@ -19,6 +19,9 @@
 - (void)refresh;
 
 - (void)refresh:(NSInteger)index;
+
+@optional
+@property (nonatomic, weak) VVBus *bus;
 
 @end
 

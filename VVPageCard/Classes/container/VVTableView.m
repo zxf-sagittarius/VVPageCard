@@ -72,21 +72,27 @@
             }
             if (!subview) {
                 subview = [[viewClass alloc] initWithFrame:CGRectMake(0, 0, CGRectGetWidth(self.frame), card.cardHeight)];
+                subview.bus = self.bus;
                 subview.tag = VVTag;
                 subview.accessibilityIdentifier = card.cardIdentifier;
                 [cell.contentView addSubview:subview];
             }
         }
+        cell.bus = bus;
         if ([cell conformsToProtocol:@protocol(VVCardProtocol)] && [cell respondsToSelector:@selector(update:)]) {
             [cell update:card];
+            cell.cardLayout = card;
         }
         if ([subview conformsToProtocol:@protocol(VVCardProtocol)] && [subview respondsToSelector:@selector(update:)]) {
             [subview update:card];
+            subview.cardLayout = card;
         }
     }
     if (!cell) {
         cell = [[VVDefalutTableCard alloc] init];
+        cell.bus = bus;
     }
+    
     return cell;
 }
 
@@ -105,7 +111,7 @@
 }
 
 #pragma mark -- VVContainerProtocol
-@synthesize cardsGroup;
+@synthesize cardsGroup, bus;
 - (void)loadDatasource:(VVCardsLayouts *_Nullable)cardsGroup {
     self.cardsGroup = cardsGroup;
 }

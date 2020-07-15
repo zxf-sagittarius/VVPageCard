@@ -43,16 +43,10 @@
 
 - (void)update:(VVBasicLayout <VVCardLayoutProtocol> *)model {
     
-    NSLog(@"%@",model.cardIdentifier);
-    
-    
     VVBasicInfo *info = model.cardModel;
     if ([info isKindOfClass:[VVBasicInfo class]]) {
         self.titleLabel.text = [NSString stringWithFormat:@"%@_%@_%ld",model.cardIdentifier,info.title,(long)model.row];
     }
-    
-    
-    
 }
 
 @end

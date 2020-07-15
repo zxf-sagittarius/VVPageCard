@@ -1,1 +1,1 @@
-../../../../../VVPageCard/Classes/view/VVDefaultCollectionCard.h
+../../../../../VVPageCard/Classes/card/VVDefaultCollectionCard.h

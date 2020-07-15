@@ -1,1 +1,1 @@
-../../../../../VVPageCard/Classes/model/VVCardLayoutProtocol.h
+../../../../../VVPageCard/Classes/layout/VVCardLayoutProtocol.h

@@ -9,6 +9,7 @@
 #import "VVTableView.h"
 #import "VVDelegateProxy.h"
 #import "VVCollectionView.h"
+#import "VVBus.h"
 
 @interface VVPageController ()
 
@@ -25,6 +26,13 @@
 
 - (void)dealloc {
     _proxy = nil;
+}
+
+- (VVBus *)bus {
+    if (!_bus) {
+        _bus = [[VVBus alloc] init];
+    }
+    return _bus;
 }
 
 - (void)loadContainer:(VVContainerType)type {
@@ -45,6 +53,7 @@
     [proxy addDelegate:table];
     [proxy addDelegate:self];
     table.delegate = (id<UITableViewDelegate>)proxy;
+    table.bus = self.bus;
     [self.view addSubview:table];
     self.containerView = table;
     self.proxy = proxy;

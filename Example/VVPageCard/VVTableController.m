@@ -11,8 +11,12 @@
 #import "VVBannerView.h"
 #import "VVBasicView.h"
 #import "VVCardIdentifier.h"
+#import "VVBus.h"
+#import "VVTestEventDefine.h"
+#import "VVHomeModel.h"
+#import "SVProgressHUD.h"
 
-@interface VVTableController ()
+@interface VVTableController () <UITableViewDelegate>
 
 @property (nonatomic, strong) VVTableViewModel *viewModel;
 
@@ -33,8 +37,30 @@
         [strongSelf loadDatasource:layout.cardsLayout];
         [strongSelf refresh];
     }];
+    
+    
+    [self registCallbacks];
 }
 
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    NSLog(@"%ld",indexPath.row);
+    
+}
+
+
+- (void)registCallbacks {
+    [self.bus registAction:^VVDisposable * _Nullable(id<VVActionReporter>  _Nonnull reporter) {
+        VVEvent *event = reporter.event;
+        VVBannerView*view = (VVBannerView *)event.poster;
+        VVBannerInfo *bannerInfo = (VVBannerInfo *)view.cardLayout.cardModel;
+        NSString *param = event.params[@"index"];
+        NSString *info = [NSString stringWithFormat:@"可以传递的信息\n%@_%ld\n%@\n%@",view.cardLayout.cardIdentifier,view.cardLayout.row,bannerInfo.title,param];
+        [SVProgressHUD showSuccessWithStatus:info];
+        [reporter reportCompleted];
+        return nil;
+    } onEvent:VVEventType_Banner];
+}
 
 @end

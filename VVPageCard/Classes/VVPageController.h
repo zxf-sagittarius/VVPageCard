@@ -19,8 +19,11 @@ typedef NS_ENUM(NSUInteger, VVContainerType) {
     VVContainerTypeReserved_3
 };
 
+@class VVBus;
+
 @interface VVPageController : UIViewController <VVContainerProtocol>
 
+@property (nonatomic, strong) VVBus *bus;
 - (void)loadContainer:(VVContainerType)type;
 
 @end

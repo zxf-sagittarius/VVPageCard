@@ -1,1 +1,1 @@
-../../../../../VVPageCard/Classes/VVCollectionView.h
+../../../../../VVPageCard/Classes/container/VVCollectionView.h
