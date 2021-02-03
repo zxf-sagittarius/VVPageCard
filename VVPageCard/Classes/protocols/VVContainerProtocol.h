@@ -21,7 +21,7 @@
 - (void)refresh:(NSInteger)index;
 
 @optional
-@property (nonatomic, weak) VVBus *bus;
+@property (nonatomic, weak) VVBus * _Nullable bus;
 
 @end
 

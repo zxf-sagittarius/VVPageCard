@@ -23,7 +23,7 @@ typedef NS_ENUM(NSUInteger, VVContainerType) {
 
 @interface VVPageController : UIViewController <VVContainerProtocol>
 
-@property (nonatomic, strong) VVBus *bus;
+@property (nonatomic, weak) VVBus *bus;
 - (void)loadContainer:(VVContainerType)type;
 
 @end

@@ -15,6 +15,7 @@
 
 @property (nonatomic, strong) UIView <VVContainerProtocol> *containerView;
 @property (nonatomic, strong) VVDelegateProxy *proxy;
+@property (nonatomic, strong) VVBus *realBus;
 
 @end
 
@@ -30,9 +31,16 @@
 
 - (VVBus *)bus {
     if (!_bus) {
-        _bus = [[VVBus alloc] init];
+        self.bus = self.realBus;
     }
     return _bus;
+}
+
+- (VVBus *)realBus {
+    if (!_realBus) {
+        _realBus = [[VVBus alloc] init];
+    }
+    return _realBus;
 }
 
 - (void)loadContainer:(VVContainerType)type {
